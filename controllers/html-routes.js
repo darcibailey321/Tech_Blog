@@ -10,13 +10,13 @@ router.get("/", async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ["name"],
+          attributes: ["username"],
         },
       ],
     });
 
     const posts = postData.map((post) => post.get({ plain: true }));
-
+console.log(posts);
     res.render("homepage", {
       posts,
       logged_in: req.session.logged_in,
