@@ -60,6 +60,8 @@ router.get('/posts/:id', async (req, res) => {
       res.status(500).json(err);
     }
   });
+
+  router.get('/profile', )
 // ---
 
 // GET - "/signup" - REgistration form
