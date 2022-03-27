@@ -27,14 +27,14 @@ router.post('/login', async (req, res) => {
         return;
       }
 //  console.log(req.body.password)
-//       const validPassword = await User.checkPassword(req.body.password);
-//      console.log (validPassword)
-//       if (!validPassword) {
-//         res
-//           .status(500)
-//           .json({ message: 'Error, please try again' });
-//         return;
-//       }
+      const validPassword = await userData.checkPassword(req.body.password);
+    //  console.log (validPassword)
+      if (!validPassword) {
+        res
+          .status(500)
+          .json({ message: 'Error, please try again' });
+        return;
+      }
   
       req.session.save(() => {
         req.session.user_id = userData.id;
