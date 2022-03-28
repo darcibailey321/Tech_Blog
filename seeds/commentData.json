@@ -1,14 +1,17 @@
 [
     {
-        "username": "Sal",
-        "post_id": 1
+        "content": "Sal's Comment",
+        "post_id": 1,
+        "user_id": 1
     },
     {
-        "username": "Lernantino",
-        "post_id": 2
+        "content": "Lernantino's Comment",
+        "post_id": 2,
+        "user_id": 2
     },
     {
-        "username": "Amiko",
-        "post_id": 3
+        "content": "Amiko's Comment",
+        "post_id": 3,
+        "user_id": 3
     }
 ]
