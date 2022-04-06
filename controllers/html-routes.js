@@ -25,6 +25,10 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/form", (req, res) => {
+  res.render("myForm")
+})
+
 
 // GET - "/login" - Login form
 router.get("/login", (req, res) => {
